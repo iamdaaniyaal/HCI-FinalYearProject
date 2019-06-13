@@ -12,11 +12,19 @@ import time
 from keras.models import Model, load_model
 import switch_1
 #model1_name = ""
+<<<<<<< HEAD
 model1_path = "/Users/daaniyaal//Desktop/HCI Project/Gesture-Recognition-with-3DCNN-master/save_model/3DCNN_LRN_300_6_jester"
 # model1_path = "C:\\Users\\wayne\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_LRN_300_6_jester"
 model1 = load_model(model1_path)
 # model2_path = "C:\\Users\\wayne\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_HRN_300_6_jester"
 model2_path = "/Users/daaniyaal//Desktop/HCI Project/Gesture-Recognition-with-3DCNN-master/save_model/3DCNN_HRN_300_6_jester"
+=======
+model1_path = "/Users/daaniyaal/Downloads/Gesture-Recognition-with-3DCNN-master/save_model/3DCNN_LRN_300_6_jester"
+# model1_path = "C:\\Users\\wayne\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_LRN_300_6_jester"
+model1 = load_model(model1_path)
+# model2_path = "C:\\Users\\wayne\\Documents\\AIA\\final_project\\gesture_recognition_result\\save_model\\3DCNN_HRN_300_6_jester"
+model2_path = "/Users/daaniyaal/Downloads/Gesture-Recognition-with-3DCNN-master/save_model/3DCNN_HRN_300_6_jester"
+>>>>>>> 70b4f8dfca7729cf4ab43db0f9037c9aa373d54b
 model2 = load_model(model2_path)
 #字型
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -38,11 +46,18 @@ real_index = 5
 instruction = 'no Gestrue'
 pre =0
 #load 種類CSV檔
+<<<<<<< HEAD
 class_file = 'test.csv'
 # with open(class_file) as f:
 #     classes = f.readlines()
 # classes = [c.strip() for c in classes]
 classes = ['Rolling Hand Backward','Rolling Hand Forward','Stop','Swiping Left','Swiping Right','No Gesture']
+=======
+class_file = 'class_jester_6_300.csv'
+with open(class_file) as f:
+    classes = f.readlines()
+classes = [c.strip() for c in classes]
+>>>>>>> 70b4f8dfca7729cf4ab43db0f9037c9aa373d54b
 num_classes = 6
 while(1):
     #fpss = cap.get(5)
